@@ -6,7 +6,7 @@
 
 .cover {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
@@ -21,6 +21,7 @@
     background-size: cover;
     width: 250px;
     height: 350px;
+    margin-bottom: 70px;
 }
 
 @include media-breakpoint-up(sm) {
@@ -30,5 +31,6 @@
 }
 
 #title {
-    font-size: 4rem;
+    font-size: 64px;
+    font-weight: 700;
 }
