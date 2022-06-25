@@ -4,15 +4,15 @@ var body = document.getElementsByTagName("body")[0];
 var index = 0;
 var timer = null;
 
-// body.onload = function () {
-//     clearInterval(timer);
-//     timer = setInterval(function () {
-//         hand.children[(index - 1 + hands.length) % hands.length].classList.add('d-none');
-//         hand.children[index].classList.remove('d-none');
-//         index++;
-//         index %= hands.length;
-//     }, 1000);
-// };
+body.onload = function () {
+    clearInterval(timer);
+    timer = setInterval(function () {
+        hand.children[(index - 1 + hands.length) % hands.length].classList.add('d-none');
+        hand.children[index].classList.remove('d-none');
+        index++;
+        index %= hands.length;
+    }, 1000);
+};
 // document.addEventListener('DOMContentLoaded', function () {
 //     clearInterval(timer);
 //     timer = setInterval(function () {
