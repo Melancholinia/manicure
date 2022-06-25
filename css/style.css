@@ -21,7 +21,7 @@
     background-size: cover;
     width: 250px;
     height: 350px;
-    margin-bottom: 70px;
+    margin-bottom: 5%;
 }
 
 .navbar-light {
@@ -35,6 +35,6 @@
 }
 
 #title {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
 }
