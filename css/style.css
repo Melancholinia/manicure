@@ -114,17 +114,23 @@
     text-decoration: none;
 }
 
+#spread {
+    font-size: 24px;
+
+}
+
 @media (max-width: 768px) {
     .navbar li {
         position: absolute;
     }
 
     .navbar li a {
-        border: 5px solid black;
+        border: 10px solid black;
         border-radius: 50%;
         color: black;
         background-color: white;
     }
+
 }
 
 @media (max-width: 576px) {
