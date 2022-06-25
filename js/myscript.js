@@ -13,13 +13,10 @@ body.onload = function () {
         index %= hands.length;
     }, 1000);
 };
-// document.addEventListener('DOMContentLoaded', function () {
-//     clearInterval(timer);
-//     timer = setInterval(function () {
-//         hand.style.backgroundImage = 'url(' + hands[index] + ')';
-//         index++;
-//         index %= hands.length;
-//     }, 500);
 
-//     console.log('aaa')
-// })
+var fist = document.getElementById('clutch:hover');
+var slap = document.getElementById('spread');
+var menu = document.querySelector('.menu');
+fist.onclick = function () {
+    menu.classList.toggle('active');
+}
