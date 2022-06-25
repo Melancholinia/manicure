@@ -10,7 +10,7 @@ body.onload = function () {
         hand.style.backgroundImage = 'url(' + hands[index] + ')';
         index++;
         index %= hands.length;
-    }, 500);
+    }, 10000);
 
     console.log('aaa')
 };
