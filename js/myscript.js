@@ -4,16 +4,16 @@ var body = document.getElementsByTagName("body")[0];
 var index = 0;
 var timer = null;
 
-body.onload = function () {
-    clearInterval(timer);
-    timer = setInterval(function () {
-        hand.style.backgroundImage = 'url(' + hands[index] + ')';
-        index++;
-        index %= hands.length;
-    }, 500);
+// body.onload = function () {
+//     clearInterval(timer);
+//     timer = setInterval(function () {
+//         hand.style.backgroundImage = 'url(' + hands[index] + ')';
+//         index++;
+//         index %= hands.length;
+//     }, 500);
 
-    console.log('aaa')
-}
+//     console.log('aaa')
+//}
 // document.addEventListener('DOMContentLoaded', function () {
 //     clearInterval(timer);
 //     timer = setInterval(function () {
