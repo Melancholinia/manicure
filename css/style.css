@@ -77,7 +77,6 @@
 .navbar {
     margin: auto;
     height: 30vh;
-    width: 70vw;
     /* border: 1px solid black; */
 }
 
@@ -122,4 +121,17 @@
         margin-bottom: 40px;
     }
 
+}
+
+@media (max-height: 850px) {
+    #title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #hand {
+        width: 25vh;
+        height: 35vh;
+        margin-bottom: 5vh;
+    }
 }
