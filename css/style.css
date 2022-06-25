@@ -9,19 +9,23 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
-    height: 70vh;
+    /* border: 1px solid black; */
+    height: 66vh;
 }
 
 .hand {
-    background-image: url(../assets/images/my-hand.png);
-    border: 1px solid black;
+    background-image: url(../assets/images/robo-hand.png);
+    /* border: 1px solid black; */
     background-repeat: 0;
     background-origin: 50% 50%;
     background-size: cover;
     width: 250px;
     height: 350px;
     margin-bottom: 70px;
+}
+
+.navbar-light {
+    border-bottom: 1px solid black;
 }
 
 @include media-breakpoint-up(sm) {
@@ -31,6 +35,6 @@
 }
 
 #title {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
 }
