@@ -22,14 +22,7 @@
     background-size: cover;
     width: 300px;
     height: 420px;
-    margin-bottom: 10%;
-}
-
-@include media-breakpoint-up(sm) {
-    .hand {
-        width: 300px;
-        height: 420px;
-    }
+    margin-bottom: 80px;
 }
 
 #title {
@@ -77,6 +70,12 @@
     #title {
         font-size: 3rem;
         font-weight: 700;
+    }
+
+    #robo-hand {
+        width: 250px;
+        height: 350px;
+        margin-bottom: 40px;
     }
 
 }
