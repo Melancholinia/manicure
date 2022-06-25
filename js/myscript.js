@@ -13,7 +13,7 @@ body.onload = function () {
     }, 500);
 
     console.log('aaa')
-}
+};
 // document.addEventListener('DOMContentLoaded', function () {
 //     clearInterval(timer);
 //     timer = setInterval(function () {
