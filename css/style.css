@@ -137,6 +137,18 @@
     }
 }
 
+@media (max-width:300px) {
+    #title {
+        width: 220px;
+        height: 56px;
+    }
+
+    .navbar li a {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 @media (max-height: 850px) {
     #title {
         font-size: 2rem;
@@ -144,8 +156,8 @@
     }
 
     #hand {
-        width: 25vh;
-        height: 35vh;
-        margin-bottom: 5vh;
+        width: 30vh;
+        height: 42vh;
+        margin-bottom: 1vh;
     }
 }
