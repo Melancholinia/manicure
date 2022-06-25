@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/thumb.css">
+    <style>
+        #scroller,
+        #scroller2 {
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            moves = document.getElementById("scroller");
+            moves2 = document.getElementById("scroller2");
+            moves.style.right = '0%';
+            moves2.style.right = '100%';
+            moveItRight();
+        }
+        function moveItRight() {
+            if (parseFloat(moves.style.right) > 100.0)
+                moves.style.right = "-100%";
+            if (parseFloat(moves2.style.right) > 100.0)
+                moves2.style.right = "-100%";
+            moves.style.right = parseFloat(moves.style.right) + 0.1 + '%';
+            moves2.style.right = parseFloat(moves2.style.right) + 0.1 + '%';
+            setTimeout("moveItRight()", 5);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-xl justify-content-center">
+            <a class="navbar-brand " href="#">manicure</a>
+        </div>
+    </nav>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <div id="windows">
+        <div class="page">
+            <div class="container-xxl">
+                <div class="row row-cols-md-1 justify-content-center">
+                    <div id="title" class="col-md-4 justify-content-center align-content-center">
+                        <!-- <img style="width: 200px;" class="m-auto d-block align-items-center"
+                            src="assets/images/nail.svg" alt=""> -->
+
+                    </div>
+                    <div class="col-md-8">
+                        <div id="cover"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="container-xxl">
+                <div class="row row-cols-md-1 justify-content-center">
+                    <div id="title" class="col-md-4 justify-content-center align-content-center">
+                    </div>
+                    <div id="page-1" class="col-md-8">
+                        <div>
+                            <h1>CHAPTER 0</h1>
+                            <h2 class="text-dark" style="font-size: 80px;">
+                                记忆无限长
+                            </h2>
+                            <h3 class="text-dark">
+                                A BRIEF HISTORY OF MANICURE
+                            </h3>
+                        </div>
+                        <div>
+                            <p class="text-dark">
+                                本纪事长了五个指头，涂上了五种自适应式指甲油。
+                            </p>
+                            <p class="text-dark">
+                                电磁炉嗡嗡抖动，芝士融化在红色的泡菜方便面。屏幕上放的电影，据说能延长我们寿命三倍。
+                            </p>
+                            <p class="text-dark">
+                                少量晶莹艳丽的液体，拧开小小的玻璃瓶，弥散出糜烂刺鼻的气体。用小刷子在指甲上涂一笔，两笔，三笔。好像在记录什么不得了的事情，但大概只有故意的空虚。
+                            </p>
+                            <p class="text-dark">
+                                指甲每天生长约1毫米，头发生长约3毫米，不加以修剪，会如何在时间的尺度上留下痕迹？指甲是一种珍贵的全自动史料，它被证明和月亮的阴晴圆缺，和潮汐，和饥荒灾难，以及股市基金有直接的联系（并没有）。指甲的生长代表一种生命力涨落的神秘魔法。尽管它的行为只是在无限延伸，但在有意识的维护下，变成了似乎自然的周期律。除非，主人太忙忘了剪，主人弹吉他，主人宿醉不省人事，或者到达生命终点。
+                            </p>
+                            <p class="text-dark">
+                                但是无论如何，我还是期待有些东西被记录下来，无论是愚蠢的还是幼稚的，草率的还是敷衍的。我想蘸着工业颜料记录下这片时光和经验，记录在我身体一部分上，直到它不再是我身体的一部分。是为指甲油记事。
+                            </p>
+                            <p class="text-dark">
+                                我花了些时间去思考和犹豫，导致这个本该是作业的项目花了过多的时间，但其实不是很在乎。想要表达，想要记录，想要创造些自以为是的东西…可能这才是我的目的，至少是当下的目的。没有时间观念，时间不是问题。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="progress" class="row">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="39.5" fill="#FEE500" stroke="black" />
+                    <circle cx="25.5" cy="25.5" r="9" fill="#FEE500" stroke="black" />
+                    <circle cx="47" cy="19" r="5.5" fill="#FEE500" stroke="black" />
+                    <circle cx="63" cy="25" r="3.5" fill="#FEE500" stroke="black" />
+                    <circle cx="53" cy="32" r="3.5" fill="#FEE500" stroke="black" />
+                    <circle cx="67" cy="39" r="3.5" fill="#FEE500" stroke="black" />
+                    <circle cx="41" cy="37" r="5.5" fill="#FEE500" stroke="black" />
+                </svg>
+
+            </div>
+            <div id="footer" class="row">
+                <svg id="scroller" width="100%" viewBox="0 0 1440 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_307_191)">
+                        <rect width="1441" height="187" transform="translate(-1)" fill="#FEE500" />
+                        <path d="M4 181V-7L74 181L144 -7V181" stroke="black" />
+                        <path d="M146 115H202" stroke="black" />
+                        <path d="M412 -1V183" stroke="black" />
+                        <path d="M502 -1L418 93L502 185" stroke="black" />
+                        <path d="M504 3V185L606 3V185" stroke="black" />
+                        <path d="M608 3L682 69L608 117L682 185" stroke="black" />
+                        <path d="M688 1V189H780" stroke="black" />
+                        <path d="M692 95H780" stroke="black" />
+                        <path d="M690 5H782" stroke="black" />
+                        <path d="M688 183H780" stroke="black" />
+                        <path d="M243 183V-7L341 183V-7" stroke="black" />
+                        <path d="M246 187L146 -5" stroke="black" />
+                        <path d="M782 183V-5L852 183L922 -5V183" stroke="black" />
+                        <path d="M924 117H980" stroke="black" />
+                        <path d="M1190 1V185" stroke="black" />
+                        <path d="M1280 1L1196 95L1280 187" stroke="black" />
+                        <path d="M1282 5V187L1384 5V187" stroke="black" />
+                        <path d="M1386 5L1460 71L1386 119L1460 187" stroke="black" />
+                        <path d="M1021 185V-5L1119 185V-5" stroke="black" />
+                        <path d="M1024 189L924 -3" stroke="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_307_191">
+                            <rect width="1441" height="187" fill="white" transform="translate(-1)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <svg id="scroller2" width="100%" viewBox="0 0 1440 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_307_191)">
+                        <rect width="1441" height="187" transform="translate(-1)" fill="#FEE500" />
+                        <path d="M4 181V-7L74 181L144 -7V181" stroke="black" />
+                        <path d="M146 115H202" stroke="black" />
+                        <path d="M412 -1V183" stroke="black" />
+                        <path d="M502 -1L418 93L502 185" stroke="black" />
+                        <path d="M504 3V185L606 3V185" stroke="black" />
+                        <path d="M608 3L682 69L608 117L682 185" stroke="black" />
+                        <path d="M688 1V189H780" stroke="black" />
+                        <path d="M692 95H780" stroke="black" />
+                        <path d="M690 5H782" stroke="black" />
+                        <path d="M688 183H780" stroke="black" />
+                        <path d="M243 183V-7L341 183V-7" stroke="black" />
+                        <path d="M246 187L146 -5" stroke="black" />
+                        <path d="M782 183V-5L852 183L922 -5V183" stroke="black" />
+                        <path d="M924 117H980" stroke="black" />
+                        <path d="M1190 1V185" stroke="black" />
+                        <path d="M1280 1L1196 95L1280 187" stroke="black" />
+                        <path d="M1282 5V187L1384 5V187" stroke="black" />
+                        <path d="M1386 5L1460 71L1386 119L1460 187" stroke="black" />
+                        <path d="M1021 185V-5L1119 185V-5" stroke="black" />
+                        <path d="M1024 189L924 -3" stroke="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_307_191">
+                            <rect width="1441" height="187" fill="white" transform="translate(-1)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <script>
+                    let windows = document.getElementById("windows");
+                    windows.addEventListener("wheel", (event) => {
+                        event.preventDefault();
+                        windows.scrollLeft += event.deltaY;
+                    });
+                </script>
+
+
+
+
+                <script src="https://unpkg.com/scrollreveal"></script>
+                <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+            </div>
+</body>
+
+</html>

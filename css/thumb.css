@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:100,300,400,500,700,900');
+
+* {
+    font-family: 'Noto Serif SC', serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.navbar {
+    background-color: black;
+    color: aliceblue;
+}
+
+.navbar a {
+    color: aliceblue;
+}
+
+#cover {
+    height: 80vh;
+    background-image: url("../assets/images/cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    display: -webkit-flex;
+}
+
+#progress {
+    background-color: black;
+    height: 20vh;
+}
+
+#footer {
+    background-color: #FEE500;
+    height: 100px;
+}
+
+#title {
+    height: 80vh;
+    background-color: #FEE500;
+    background-image: url(../assets/images/nail.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#windows {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+#page-1 {
+    background-color: white;
+}
