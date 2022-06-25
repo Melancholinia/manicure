@@ -24,10 +24,6 @@
     margin-bottom: 5%;
 }
 
-.navbar-light {
-    border-bottom: 1px solid black;
-}
-
 @include media-breakpoint-up(sm) {
     .hand {
         /* width: 300px; */
@@ -35,6 +31,6 @@
 }
 
 #title {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
 }
