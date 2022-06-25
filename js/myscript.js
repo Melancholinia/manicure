@@ -4,13 +4,11 @@ var body = document.getElementsByTagName("body")[0];
 var index = 0;
 var timer = null;
 
-body.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     clearInterval(timer);
     timer = setInterval(function () {
         hand.style.backgroundImage = 'url(' + hands[index] + ')';
         index++;
         index %= hands.length;
     }, 500);
-
-    console.log('aaa')
-}
+})
