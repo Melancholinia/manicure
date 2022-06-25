@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:100,300,400,500,700,900');
+
+* {
+    font-family: 'Noto Serif SC', serif;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 70vh;
+}
+
+.hand {
+    background-image: url(../assets/images/art-hand.png);
+    border: 1px solid black;
+    background-repeat: 0;
+    background-origin: 50% 50%;
+    background-size: cover;
+    width: 250px;
+    height: 350px;
+}
+
+@include media-breakpoint-up(sm) {
+    .hand {
+        /* width: 300px; */
+    }
+}
+
+#title {
+    font-size: 4rem;
+}
