@@ -7,12 +7,11 @@ var timer = null;
 body.onload = function () {
     clearInterval(timer);
     timer = setInterval(function () {
-        hand.style.backgroundImage = 'url(' + hands[index] + ')';
+        hand.children[(index - 1 + hands.length) % hands.length].classList.add('d-none');
+        hand.children[index].classList.remove('d-none');
         index++;
         index %= hands.length;
-    }, 10000);
-
-    console.log('aaa')
+    }, 1000);
 };
 // document.addEventListener('DOMContentLoaded', function () {
 //     clearInterval(timer);
