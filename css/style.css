@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     /* border: 1px solid black; */
-    height: 66vh;
+    height: 70vh;
 }
 
 #hand {
@@ -26,11 +26,32 @@
 
 @include media-breakpoint-up(sm) {
     .hand {
-        /* width: 300px; */
+        width: 300px;
+        height: 420px;
     }
 }
 
 #title {
     font-size: 4rem;
     font-weight: 700;
+}
+
+.navbar {
+    margin: auto;
+    height: 30vh;
+    width: 70vw;
+    /* border: 1px solid black; */
+}
+
+.navbar li {
+    border: 1px solid black;
+    border-radius: 45%;
+    ;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    list-style: none;
+    text-align: center;
+    line-height: 70px;
+    vertical-align: middle;
 }
