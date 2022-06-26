@@ -245,14 +245,16 @@ ul {
 }
 
 @media (max-height: 800px) {
-
-    .cover {
-        height: 70vh;
-    }
-
     .menu.active .menu-item {
         transform: rotate(calc(-170deg + 40deg*var(--i))) translateX(75px);
         /* transform-origin: 150px; */
         transition: 1s;
+    }
+}
+
+@media (max-height: 400px) {
+
+    .cover {
+        height: 70vh;
     }
 }
