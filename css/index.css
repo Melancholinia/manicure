@@ -161,7 +161,7 @@ ul {
     color: white;
     font-size: 19px;
     font-weight: 900;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     width: 70px;
@@ -176,13 +176,18 @@ ul {
 }
 
 .menu.active #spread {
-    opacity: 1.0;
+
     transform: scale(1.0);
 }
 
+.menu.active #spread a {
+    background-color: black;
+}
+
 .menu #spread {
-    opacity: 0.0;
+    opacity: 1.0;
     transform: scale(0.4);
+    background-color: white;
     transition-delay: 100ms;
     transition: 200ms ease;
 }
