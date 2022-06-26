@@ -5,10 +5,13 @@
     overflow: hidden;
 }
 
-body {
+
+body,
+html {
     padding: 0;
     background-color: white;
-    overflow: hidden;
+    overflow: hidden !important;
+    position: fixed;
 }
 
 :root {
@@ -17,13 +20,13 @@ body {
 }
 
 input {
-    box-shadow: none;
-    outline: none;
-    resize: none;
-    border: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
     -webkit-appearance: none !important;
     appearance: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #choice {
@@ -49,8 +52,12 @@ input {
     .slider {
         position: fixed;
         background: transparent;
-        -webkit-appearance: none;
-        appearance: none;
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
         width: 80vh;
         height: 100vw;
         top: -50vw;
@@ -60,8 +67,12 @@ input {
     }
 
     .slider::-webkit-slider-thumb {
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
         -webkit-appearance: none !important;
-        appearance: none;
+        appearance: none !important;
         width: 30px;
         height: 100vw;
         background-color: #000000;
@@ -70,8 +81,12 @@ input {
     .slider2 {
         position: fixed;
         background: transparent;
-        -webkit-appearance: none;
-        appearance: none;
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
         width: 80vh;
         height: 100vw;
         z-index: 101;
@@ -82,8 +97,12 @@ input {
     }
 
     .slider2::-webkit-slider-thumb {
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
         -webkit-appearance: none !important;
-        appearance: none;
+        appearance: none !important;
         width: 30px;
         height: 100vw;
         background-color: #000000;
@@ -108,8 +127,12 @@ input {
     .slider {
         position: fixed;
         background: transparent;
-        -webkit-appearance: none;
-        appearance: none;
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
         /* border: 1px solid black; */
         top: 0 !important;
         width: 100vw;
@@ -118,8 +141,12 @@ input {
     }
 
     .slider::-webkit-slider-thumb {
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
         -webkit-appearance: none !important;
-        appearance: none;
+        appearance: none !important;
         width: 30px;
         height: 79vh;
         background-color: #000;
@@ -130,8 +157,12 @@ input {
     .slider2 {
         position: fixed;
         background: transparent;
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
         -webkit-appearance: none !important;
-        appearance: none;
+        appearance: none !important;
         width: 80vh;
         height: 100vw;
         z-index: 100;
@@ -142,8 +173,12 @@ input {
     }
 
     .slider2::-webkit-slider-thumb {
-        -webkit-appearance: none;
+        box-shadow: none !important;
+        outline: none !important;
+        resize: none !important;
+        border: none !important;
         -webkit-appearance: none !important;
+        appearance: none !important;
         width: 30px;
         height: 100vw;
         background-color: #000000;
@@ -221,10 +256,22 @@ input {
 }
 
 .slider2[disabled] {
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     z-index: 1 !important;
 }
 
 .slider2.active {
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     width: 100vh;
     height: 100vw;
     top: -50vw;
@@ -236,6 +283,12 @@ input {
 .slider2.active::-webkit-slider-thumb {
     /* opacity: 0; */
     /* visibility: hidden; */
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     width: 1vw;
     background-color: rgba(256, 256, 256, 0.4);
     box-sizing: border-box;
@@ -277,6 +330,12 @@ input {
 }
 
 .slider.active::-webkit-slider-thumb {
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     width: 1vw;
     box-sizing: border-box;
     height: 200vh;
@@ -304,6 +363,12 @@ input {
 }
 
 #confirm h1 {
+    box-shadow: none !important;
+    outline: none !important;
+    resize: none !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
     color: #fff;
     font-size: 1.4rem;
     transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
