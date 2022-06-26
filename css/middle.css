@@ -379,11 +379,13 @@ input {
 
 
 #loveislove[disabled] {
+    visibility: hidden;
     z-index: 100;
     opacity: 0;
 }
 
 #slogan[disabled] {
+    visibility: hidden;
     z-index: 100;
     opacity: 0;
 }
