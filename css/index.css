@@ -190,7 +190,7 @@ ul {
 @media (max-width: 768px) {
     .navbar li {
         position: absolute;
-        top: calc(50% - 40px);
+        top: calc(50% - 20px);
     }
 
     .menu-item a {
