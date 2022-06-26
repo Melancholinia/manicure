@@ -367,7 +367,9 @@ input {
     -webkit-text-fill-color: transparent;
     background: linear-gradient(94.75deg, rgb(255, 0, 0) 0%, rgb(246, 160, 0) 23.66%, rgb(108, 177, 79) 44.23%, rgb(19, 30, 223) 53.76%, rgb(158, 12, 211) 100%);
     -webkit-background-clip: text;
-    font-size: 12vw;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 3rem;
     font-weight: 800;
     z-index: 2000;
     opacity: 1;
@@ -394,8 +396,10 @@ input {
     width: 50vw;
     height: auto;
     color: black;
-    transform: translate(calc(50vw - 50%), calc(60vh - 50%));
-    font-size: 4vw;
+    transform: translate(calc(50vw - 50%), calc(70vh - 50%));
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
     font-weight: 400;
     z-index: 2000;
     opacity: 1;
