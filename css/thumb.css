@@ -31,16 +31,23 @@ body {
     height: 20vh;
 }
 
+@media (max-width: 768px) {
+    #progress {
+        background-color: black;
+        height: 500px;
+    }
+}
+
 #footer {
     background-color: #FEE500;
-    height: 100px;
+    height: 800px;
 }
 
 #title {
     height: 80vh;
     background-color: #FEE500;
     background-image: url(../assets/images/nail.svg);
-    background-size: 80%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }

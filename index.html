@@ -8,10 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-</head>
-<div>
-
-</div>
+    <script>
+        function a() {
+            // menu.classList.toggle('active');
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 
 <body>
     <div class="containter-fluid">
@@ -45,11 +48,11 @@
                 <li class="menu-item" style="--i:4">
                     <a href="pinkie.html">小</a>
                 </li>
-                <li id="spread" class="d-md-none">
+                <li id="spread" onclick="a()" class="d-md-none">
                     <a href="#">掌</a>
                 </li>
-                <li id="clutch" class="d-md-none">
-                    <a href="#">拳</a>
+                <li id="clutch" onclick="a()" class="d-md-none">
+                    <a>拳</a>
                 </li>
             </ul>
         </nav>

@@ -13,10 +13,3 @@ body.onload = function () {
         index %= hands.length;
     }, 1000);
 };
-
-var fist = document.getElementById('clutch:hover');
-var slap = document.getElementById('spread');
-var menu = document.querySelector('.menu');
-fist.onclick = function () {
-    menu.classList.toggle('active');
-}
