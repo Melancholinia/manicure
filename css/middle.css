@@ -259,6 +259,7 @@ input {
 }
 
 #option-1[disabled] {
+    visibility: hidden;
     background: none !important;
 }
 
@@ -271,6 +272,7 @@ input {
 }
 
 #option-2[disabled] {
+    visibility: hidden;
     background: none !important;
 }
 
