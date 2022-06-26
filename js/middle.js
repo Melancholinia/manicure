@@ -46,22 +46,31 @@ $('#option-2').on('hover', function (inevent) {
 $('.slider').on('input propertychange', function (inevent) {
     $('#choice').addClass('active');
     $('.slider2').removeAttr('disabled');
-    $('#option-1').removeClass('active');
     $('#confirm').addClass('active');
     $('#option-1').attr("disabled", true);
     $('#option-2').attr("disabled", true);
     $('.slider').addClass('active');
-    var value = $('.slider')[0].value;
-})
-$('.slider').on('input propertychange', function (inevent) {
     let value = $('.slider')[0].value;
     document.documentElement.style.setProperty('--slider1', value);
-    $('.option').style.setProperty('--slider1', value);
-    $('#option-2').style.setProperty('--slider1', value);
 })
-var timer = null;
-clearInterval(timer);
-timer = setInterval(function () {
-    console.log(getComputedStyle(document.documentElement).getPropertyValue('--slider1'));
-    // console.log($('.slider').value);
-}, 300);
+
+$('.slider2').on('input propertychange', function (inevent) {
+    $('#choice').attr('active', true);
+    $('.slider2').addClass('active');
+    $('#confirm').attr("disabled", true);
+    $('#love').attr("disabled", false);
+    let value = $('.slider2')[0].value;
+    document.documentElement.style.setProperty('--slider2', value);
+    $('#option-2').style.setProperty('--slider2', value);
+})
+
+$('#love').on('click', function (inevent) {
+    $('#love').attr("disabled", true);
+    $('#choice').addClass('disabled');
+    // $('#choice').removeClass('active');
+    $('#loveislove').attr("disabled", false);
+})
+// var timer = null;
+// timer = setInterval(function () {
+//     $('.slider2').
+// }, 1000);

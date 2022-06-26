@@ -12,8 +12,8 @@
 
 <body>
     <div class="container-xxl">
-        <input type="range" class="slider2" min="1" max="1000" value="1000">
-        <input type="range" class="slider" min="1" max="1000" value="500">
+        <input type="range" disabled="disabled" class="slider2" min="1" max="1000" value="1000" step="1">
+        <input type="range" class="slider" min="1" max="1000" value="500" step="1">
         <form action="ring1.html" method="GET" target="_blank" accept-charset="UTF-8"
             ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
             <div id="choice" disabled="disabled" class="row">
@@ -24,7 +24,7 @@
                     <h2>FEMALE</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="decision">
 
                 <input type="button" id="confirm" data-toggle="modal" data-target="#exampleModalCenter"
                     class="col-12 d-flex justify-content-center align-items-center" value="CONFIRM">
@@ -48,6 +48,10 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div id="love" disabled="disabled"></div>
+    <div id="loveislove" disabled="disabled">
+        LOVE IS LOVE!
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
