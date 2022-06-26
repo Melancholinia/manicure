@@ -7,4 +7,10 @@
 body {
     padding: 0;
     background-color: white;
+    overflow: hidden;
+}
+
+:root {
+    ---windowWidth: calc(100vx);
+    --windowHeight: calc(100vh);
 }

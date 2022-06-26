@@ -48,3 +48,6 @@ $('').on('click', function (inevent) {
 })
 
 console.log($(--slide));
+
+var w = document.documentElement.clientWidth || document.body.clientWidth;
+var h = document.documentElement.clientHeight || document.body.clientHeight;

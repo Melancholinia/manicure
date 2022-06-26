@@ -30,18 +30,19 @@
                 background: transparent;
                 -webkit-appearance: none;
                 appearance: none;
-                top: 0 !important;
-                width: 100vw;
-                height: 80vh;
+                width: 80vh;
+                height: 100vw;
+                top: -50vw;
+                left: -40vh;
                 z-index: 100;
-                transform: rotate(90deg);
+                transform: translate(50vw, 40vh) rotate(90deg);
             }
 
             .slider::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
                 width: 30px;
-                height: 100vh;
+                height: 100vw;
                 background-color: #000000;
             }
 
@@ -50,12 +51,12 @@
                 background: transparent;
                 -webkit-appearance: none;
                 appearance: none;
-                bottom: 0 !important;
-                left: 0 !important;
-                width: 100vw;
-                height: 40vh;
+                width: 80vh;
+                height: 100vw;
                 z-index: 1000;
-                transform: rotate(90deg);
+                top: -50vw;
+                left: -40vh;
+                transform: translate(50vw, 40vh) rotate(90deg);
             }
 
             .slider2::-webkit-slider-thumb {
@@ -86,9 +87,10 @@
                 background: transparent;
                 -webkit-appearance: none;
                 appearance: none;
+                /* border: 1px solid black; */
                 top: 0 !important;
                 width: 100vw;
-                height: 100vh;
+                height: 79vh;
                 z-index: 100;
             }
 
@@ -96,16 +98,10 @@
                 -webkit-appearance: none;
                 appearance: none;
                 width: 30px;
-                height: 200vw;
+                height: 79vh;
                 background-color: #000;
 
                 /* background-color: #000; */
-            }
-
-            @media (max-width: 768px) {
-                .slider {
-                    
-                }
             }
 
             .slider2 {
@@ -113,12 +109,12 @@
                 background: transparent;
                 -webkit-appearance: none;
                 appearance: none;
-                bottom: 0 !important;
-                left: 0 !important;
-                width: 100vw;
-                height: 40vh;
+                width: 80vh;
+                height: 100vw;
                 z-index: 1000;
-                transform: rotate(90deg);
+                top: -50vw;
+                left: -40vh;
+                transform: translate(50vw, 40vh) rotate(90deg);
             }
 
             .slider2::-webkit-slider-thumb {
@@ -236,8 +232,8 @@
 </head>
 
 <body>
-    <div class="container-xxl" style="--slide: 500;">
-        <input type="range" class="slider2" disabled="disabled" min="1" max="1000" value="500">
+    <div class="container-xxl" style="--slide: 500;--slide2:1">
+        <input type="range" class="slider2" disabled="disabled" min="1" max="1000" value="1000">
         <input type="range" class="slider" min="1" max="1000" value="500"
             oninput="this.parentNode.style.setProperty('--slide', '${this.value}')">
         <form action="ring1.html" method="GET" target="_blank" accept-charset="UTF-8"
