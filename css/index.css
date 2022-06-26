@@ -115,7 +115,7 @@ ul {
     text-decoration: none;
 }
 
-menu {
+.menu {
     width: 40%;
     padding: 0;
 }
@@ -160,6 +160,7 @@ menu {
 #spread a {
     color: white;
     font-size: 19px;
+    font-weight: 900;
     background-color: black;
     border-radius: 50%;
     display: flex;
@@ -189,9 +190,12 @@ menu {
 @media (max-width: 768px) {
     .navbar li {
         position: absolute;
+        top: calc(50% - 30px);
     }
 
     .menu-item a {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         color: black;
         transform: rotate(calc(170deg - 40deg*var(--i)));
@@ -240,9 +244,17 @@ menu {
     }
 }
 
-@media (max-height: 900px) {
+@media (max-height: 800px) {
     .menu.active .menu-item {
         transform: rotate(calc(-170deg + 40deg*var(--i))) translateX(95px);
+        /* transform-origin: 150px; */
+        transition: 1s;
+    }
+}
+
+@media (max-height: 800px) {
+    .menu.active .menu-item {
+        transform: rotate(calc(-170deg + 40deg*var(--i))) translateX(75px);
         /* transform-origin: 150px; */
         transition: 1s;
     }
