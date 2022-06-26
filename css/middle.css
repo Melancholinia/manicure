@@ -14,3 +14,7 @@ body {
     ---windowWidth: calc(100vx);
     --windowHeight: calc(100vh);
 }
+
+input {
+    -webkit-appearance: none;
+}
