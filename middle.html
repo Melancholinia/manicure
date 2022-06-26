@@ -26,8 +26,9 @@
             </div>
             <div class="row" id="decision">
 
-                <input type="button" id="confirm" data-toggle="modal" data-target="#exampleModalCenter"
-                    class="col-12 d-flex justify-content-center align-items-center" value="CONFIRM">
+                <input type="button" id="confirm" disabled="disabled" data-toggle="modal"
+                    data-target="#exampleModalCenter" class="col-12 d-flex justify-content-center align-items-center"
+                    value="CONFIRM">
             </div>
             <!-- Button trigger modal -->
             <!-- Modal -->
@@ -35,14 +36,12 @@
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Approved</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
+
+                        <div class="modal-body justify-content-center text-center">
+                            <p>You just made a choice!
+                            </p>
+                            <p>Or... DID YOU?
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -52,6 +51,9 @@
     <div id="love" disabled="disabled"></div>
     <div id="loveislove" disabled="disabled">
         LOVE IS LOVE!
+    </div>
+    <div id="slogan" disabled="disabled">
+        517 Special To You & Us.
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
