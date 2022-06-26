@@ -78,8 +78,10 @@ $('.slider').on('input propertychange', function (inevent) {
         $('.modal-body')[0].innerHTML = "<p>Congratulations! You just made a great step!</p><p>But... Is it finished?</p>";
     else if (stage == 0)
         $('.modal-body')[0].innerHTML = "<p>Geez! How could you figure it out at the first try</p><p>A friend of mine? Try the next one!</p>";
-    stage = 1;
-    tryOut = 0;
+    if (stage == 0) {
+        stage = 1;
+        tryOut = 0;
+    }
 })
 
 $('.slider2').on('input propertychange', function (inevent) {
