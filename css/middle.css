@@ -11,8 +11,8 @@ body {
 }
 
 :root {
-    ---windowWidth: calc(100vx);
-    --windowHeight: calc(100vh);
+    --slider1: 500;
+    --slider2: 1000;
 }
 
 input {
@@ -55,7 +55,7 @@ input {
     }
 
     .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
+        -webkit-appearance: none !important;
         appearance: none;
         width: 30px;
         height: 100vw;
@@ -76,11 +76,12 @@ input {
     }
 
     .slider2::-webkit-slider-thumb {
-        -webkit-appearance: none;
+        -webkit-appearance: none !important;
         appearance: none;
         width: 30px;
         height: 100vw;
         background-color: #000000;
+        transition: 1s ease-in-out;
     }
 }
 
@@ -111,7 +112,7 @@ input {
     }
 
     .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
+        -webkit-appearance: none !important;
         appearance: none;
         width: 30px;
         height: 79vh;
@@ -123,7 +124,7 @@ input {
     .slider2 {
         position: fixed;
         background: transparent;
-        -webkit-appearance: none;
+        -webkit-appearance: none !important;
         appearance: none;
         width: 80vh;
         height: 100vw;
@@ -135,7 +136,7 @@ input {
 
     .slider2::-webkit-slider-thumb {
         -webkit-appearance: none;
-        appearance: none;
+        -webkit-appearance: none !important;
         width: 30px;
         height: 100vw;
         background-color: #000000;
@@ -199,13 +200,21 @@ input {
     }
 }
 
+#choice {
+    background-color: rgba(calc(256 - var(--slider1)/1000.0 * 256), 0, calc(92 + var(--slider1)/1000.0 * 256), 0) !important;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#choice.active {
+    background-color: rgb(calc(256 - var(--slider1)/1000.0 * 220), 0, calc(92 + var(--slider1)/1000.0 * 164), 1) !important;
+}
+
 #option-2.active h2 {
     color: #ffffff;
 }
 
 #option-1[disabled] {
-    background-color: aqua !important;
-    color: #2400FF;
+    background: none !important;
 }
 
 #option-1[disabled] h2 {
@@ -217,13 +226,19 @@ input {
 }
 
 #option-2[disabled] {
-    background-color: aqua !important;
-    color: #2400FF;
+    background: none !important;
 }
 
-.slider[active]::-webkit-slider-thumb {
-    border: 1px solid black;
-    background-color: aqua !important;
+.slider.active::-webkit-slider-thumb {
+    width: 99vw;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.slider.active {
+    /* height: 200vw; */
+    /* max: 10000;
+    min: 1; */
 }
 
 #confirm {

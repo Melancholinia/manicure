@@ -11,17 +11,16 @@
 </head>
 
 <body>
-    <div class="container-xxl" style="--slide: 500;--slide2:1">
-        <input type="range" class="slider2" disabled="disabled" min="1" max="1000" value="1000">
-        <input type="range" class="slider" min="1" max="1000" value="500"
-            oninput="this.parentNode.style.setProperty('--slide', '${this.value}')">
+    <div class="container-xxl">
+        <input type="range" class="slider2" min="1" max="1000" value="1000">
+        <input type="range" class="slider" min="1" max="1000" value="500">
         <form action="ring1.html" method="GET" target="_blank" accept-charset="UTF-8"
             ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-            <div id="choice" class="row">
-                <div id="option-1" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div id="choice" disabled="disabled" class="row">
+                <div id="option-1" class="option col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <h2>MALE</h2>
                 </div>
-                <div id="option-2" class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div id="option-2" class="option col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <h2>FEMALE</h2>
                 </div>
             </div>
