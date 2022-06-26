@@ -20,7 +20,7 @@ $('#option-2').on('click', function (inevent) {
     }
     if (($('#option-2').hasClass('active')) != ($('#option-1').hasClass('active'))) {
         $('#confirm').addClass('active');
-        $('.slider2').removeAttr('disabled');
+        // $('.slider2').removeAttr('disabled');
     } else {
         $('#confirm').removeClass('active');
     }
@@ -43,11 +43,10 @@ $('#option-2').on('hover', function (inevent) {
     }
 })
 
-$('').on('click', function (inevent) {
-    let value;
+$('.slider').on('change', function (inevent) {
+    $('.slider2').removeAttr('disabled');
+    $('#option-1').removeClass('active');
+    $('#option-1').attr("disabled", true);
+    $('#option-2').attr("disabled", true);
+    $('.slider').attr('active', true);
 })
-
-console.log($(--slide));
-
-var w = document.documentElement.clientWidth || document.body.clientWidth;
-var h = document.documentElement.clientHeight || document.body.clientHeight;
