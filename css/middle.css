@@ -260,6 +260,7 @@ input {
     outline: none !important;
     resize: none !important;
     border: none !important;
+    opacity: 1 !important;
     -webkit-appearance: none !important;
     appearance: none !important;
     z-index: 1 !important;
@@ -271,6 +272,7 @@ input {
     resize: none !important;
     border: none !important;
     -webkit-appearance: none !important;
+    opacity: 1 !important;
     appearance: none !important;
     width: 100vh;
     height: 100vw;
