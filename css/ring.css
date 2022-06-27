@@ -419,3 +419,11 @@ button:focus {
     height: 100vh;
     background-color: #0F0F0F;
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        /* width: 220vw !important;
+        height: 220vw !important; */
+        /* background-color: black; */
+    }
+}

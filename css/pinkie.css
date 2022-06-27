@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.flex-row .avatar {
+    margin-right: 12px;
+}
+
+.flex-row-reverse .avatar {
+    margin-left: 12px;
+}
+
+.flex-row .bubble {
+    top: 8px;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.flex-row-reverse .bubble {
+    top: -5px;
+    background-color: #95EC6A;
+    margin-bottom: 6px;
+}
+
+.bubble {
+    position: relative;
+    background-color: #95EC6A;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 70%;
+    margin-top: 6px;
+}
+
+.flex-row .bubble div::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #ffffff;
+    /* background-color: #95EC6A; */
+    position: relative;
+    left: -16px;
+    top: 3px;
+}
+
+.flex-row-reverse .bubble div::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #95EC6A;
+    /* background-color: #95EC6A; */
+    position: relative;
+    left: 16px;
+    top: 3px;
+}
