@@ -12,6 +12,7 @@ html {
     background-color: white;
     overflow: hidden !important;
     position: fixed;
+    width: 100vw !important;
 }
 
 :root {
