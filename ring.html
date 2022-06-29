@@ -11,8 +11,6 @@
 </head>
 
 <body>
-    <div id="shadow-layer">
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" aria-label="Navbar">
         <div class="container-xl container-lg-fluid">
             <a class="navbar-brand pb-2" href="index.html">
@@ -119,7 +117,7 @@
                 TRENDING
             </h1>
         </div>
-        <div class="row row-cols-2 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 p-4">
+        <div id="shopping-list" class="row row-cols-2 row-cols-sm-3  row-cols-lg-6 p-4 d-flex justify-content-center">
             <div class="col">
                 <div class="card">
                     <img class="card-cover" src="assets/images/1.png" alt="">
@@ -202,6 +200,46 @@
                     </div>
 
 
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-cover" src="assets/images/1.png" alt="">
+                    <div class="card-like"></div>
+                    <div class="card-content-wrapper">
+                        <div class="container card-content">
+                            <div class="row">
+                                <div class="col-7 card-info">
+                                    <div class="card-title">
+                                        <h4>一起涂指甲</h4>
+                                        <h5>流行用指甲油收纳盒</h5>
+                                        <ul>
+                                            <li class="badge badge-pill badge-primary">价格高</li>
+                                            <li class="badge badge-pill badge-secondary">友情价</li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                        很喜欢宫崎骏说的一句话：“不要轻易去依赖一个人，它会成为你的习惯，当分别来临，你失去的不是某个人，而是你精神的支柱。无论何时何地，都要学会独立行走，它会让你走得更坦然些。”
+                                    </p>
+                                </div>
+                                <div class="col-5 card-purchase">
+                                    <div class="price-tag">
+                                        <h5>¥2,000</h5>
+                                        <div class="order-contorller">
+                                            <img class="reduce" src="assets/icon/reduce.svg" alt="">
+                                            <span class="order-sum">1</span>
+                                            <img class="add" src="assets/icon/add.svg" alt="">
+                                        </div>
+                                        <h5>总价 ¥2,000</h5>
+                                        <h5>* 因疫情原因不能送到任何地方，只能线上使用</h5>
+                                    </div>
+                                    <div class="purchase-button">
+                                        <span>选购</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -325,36 +363,75 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <h1 class="col text-center section-title">
+                MARKETING
+            </h1>
+        </div>
+        <div class="row row-cols-md-2 row-cols-sm-1 px-5 col-offset-3">
+            <div class="col article box align-contents-md-stretch">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2>不买就不买 | 深度测评 </h2>
+                    <h3>1/9 </h3>
+                </div>
+                <p>我一直都觉得最难过的瞬间，一定不是你爱而不得的时候，而是你明白你和这个人真的没有以后了，以后他给过你的没有给过你的，都要给另一个人了，而你连眼红都没有资格。</p>
+            </div>
+            <div class="col article box">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2>不买就不买 | 深度测评 </h2>
+                    <h3>2/13 </h3>
+                </div>
+                <p>我一直都觉得最难过的瞬间，一定不是你爱而不得的时候，而是你明白你和这个人真的没有以后了，以后他给过你的没有给过你的，都要给另一个人了，而你连眼红都没有资格。</p>
+            </div>
+        </div>
     </div>
+    </div>
+
+    <div id="underbar" class="container-xxl container-fluid">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="assets/images/ring-logo-single.svg" width=" 24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy; 2002-2022</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/card.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script>
-        $('.grid').masonry({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid-item',
-            // use element for option
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        })
-
-        var elem = document.querySelector('.grid');
-        var msnry = new Masonry(elem, {
-            // options
-            itemSelector: '.grid-item',
-            columnWidth: 200
-        });
-
-        // element argument can be a selector string
-        //   for an individual element
-        var msnry = new Masonry('.grid', {
-            // options
-        });
-
-    </script>
 </body>
 
 </html>

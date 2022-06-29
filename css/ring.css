@@ -6,7 +6,8 @@
 
 body {
     padding: 0;
-    background-color: white;
+    overflow-x: hidden;
+    background-color: #F6F6F6;
 }
 
 .navbar {
@@ -27,14 +28,6 @@ body {
 .blog-header-logo {
     color: rgb(0, 0, 0);
     font-size: 20px;
-}
-
-#footer {
-    padding: 5% 10%;
-}
-
-#footer a {
-    color: rgb(194, 194, 194);
 }
 
 .nav-item a {
@@ -160,6 +153,10 @@ button:focus {
     --primary: #DC1166 !important;
     --secondary: #0F0F0F !important;
     font-size: 15px;
+}
+
+#shopping-list>.col {
+    height: 200px !important;
 }
 
 .card {
@@ -304,16 +301,27 @@ button:focus {
     filter: brightness(0.8);
 }
 
+#underbar {
+    transform: translateY(20%);
+    padding: 0 !important;
+    margin: 0 !important;
+    background: linear-gradient(180deg, #303030 0%, #1A1A1A 100%);
+}
+
+#underbar h5 {
+    color: lightgray;
+}
+
+footer {
+    padding: 0px 80px;
+}
+
 .purchase-button span {
     transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .purchase-button:active span {
     transform: scale(0.8);
-}
-
-.col {
-    height: 100%;
 }
 
 .badge {
@@ -408,22 +416,41 @@ button:focus {
     width: 10%;
 }
 
-#shadow-layer {
-    opacity: 0;
-    z-index: -1;
-    transition: .3s ease-in;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0F0F0F;
-}
-
 @media screen and (max-width: 768px) {
     .card {
         /* width: 220vw !important;
         height: 220vw !important; */
         /* background-color: black; */
     }
+}
+
+.article:first-child {
+    color: white;
+    background-color: #999999;
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.article:nth-child(2) {
+    background-color: #ffffff;
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.article h2 {
+    margin: 20px auto 20px 20px;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.article h3 {
+    margin: 20px 20px 20px auto;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.article p {
+    margin: auto 20px;
 }
