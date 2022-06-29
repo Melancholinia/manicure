@@ -159,6 +159,16 @@ body {
     display: none !important;
 }
 
-.chat:first-child{
+.chat:first-child {
     margin-top: 80px;
+}
+
+.flex-row .avatar {
+    background-image: url(../assets/images/avatar-me.png);
+    background-size: cover;
+}
+
+.flex-row-reverse .avatar {
+    background-image: url(../assets/images/avatar-you.png);
+    background-size: cover;
 }
