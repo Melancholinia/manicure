@@ -120,6 +120,7 @@ body {
 #scroller,
 #scroller2 {
     position: absolute;
+    position: fixed;
     z-index: 30000;
     background-image: url("../assets/images/scroller.png");
     width: 100%;
@@ -128,4 +129,8 @@ body {
     background-repeat: no-repeat;
     top: 0 !important;
     transform: translateY(85vh);
+}
+
+#page-1 div {
+    padding-left: 30px;
 }

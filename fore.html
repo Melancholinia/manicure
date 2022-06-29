@@ -4,12 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>食指</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fore.css">
 </head>
 
 <body>
-
+    <!-- Just an image -->
+    <nav class="navbar navbar-dark navbar-expand-lg position-absolute">
+        <div class="container-xl justify-content-center">
+            <a class="navbar-brand " href="index.html">manicure</a>
+        </div>
+    </nav>
+    <div class="container-xl">
+        <div class="row justify-content-center align-items-center flex-column">
+            <div id="scene" class="justify-content-center align-items-center flex-column">
+                <div id="door" class="layer img-fluid" data-depth="1.00"><img class="img-fluid"
+                        src="assets/images/door.svg" alt="">
+                </div>
+                <div id="poem" class="d-flex justify-content-center align-items-center" data-depth="0.80">
+                    <ul class="d-flex justify-content-center align-items-center flex-column">
+                        <li>摆giggbvygi脱</li>
+                        <li>摆脱</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div id="poem" class="justify-content-center align-items-center" data-depth="1.00">
+                <ul>
+                    <li>我该怎fbdfbdbfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfg么办</li>
+                    <li>我也不知道</li>
+                    <li>白天</li>
+                    <li>黑夜</li>
+                    <li>不可以</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <script src=" js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
 </body>
 
 </html>

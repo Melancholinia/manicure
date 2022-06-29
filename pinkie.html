@@ -11,12 +11,25 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg">
+    <nav class="navbar navbar-light navbar-expand-lg position-absolute">
         <div class="container-xl justify-content-center">
             <a class="navbar-brand " href="index.html">manicure</a>
         </div>
     </nav>
-    <div class="container-xl">
+    <div class="container-xl inputbar  fixed-bottom">
+        <div class="d-flex justify-content-start align-items-end">
+            <div>
+                <div class="speak"></div>
+            </div>
+            <textarea class="input" rows="1"></textarea>
+            <div class="d-flex align-items-center">
+                <div class="emoji"></div>
+                <div class="add"></div>
+                <div class="send-button d-flex justify-content-center align-items-center" disabled="disabled">发送</div>
+            </div>
+        </div>
+    </div>
+    <div id="chatroom" class="container-xl">
         <div class="chat d-flex flex-row justify-content-start align-items-start">
             <div class="avatar">
                 头像
@@ -26,6 +39,15 @@
             </div>
         </div>
         <div class="chat d-flex flex-row-reverse justify-content-start align-items-start">
+            <div class="avatar">
+                头像
+            </div>
+            <div class="bubble">
+                <div>你好代课教师</div>
+            </div>
+        </div>
+        <div class="chat d-flex flex-row justify-content-start align-items-start">
+
             <div class="avatar">
                 头像
             </div>
